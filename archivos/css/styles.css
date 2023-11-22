@@ -1,0 +1,397 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(38, 92%, 58%);
+  --first-color-light: hsl(38, 100%, 78%);
+  --first-color-alt: hsl(32, 75%, 50%);
+  --second-color: black;/*hsl(195, 75%, 52%);*/
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(212, 4%, 95%);
+  --body-color: blueviolet; /*hsl(212, 42%, 15%);*/
+ --container-color: orange; /*hsl(212, 42%, 20%); */
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 0.8rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== NAVBAR ===============*/
+
+
+
+/*Logo*/
+.navbar-brand {
+  margin-left: 80px; 
+}
+
+.navbar-brand img {
+  height: 64px;
+  width: 64px; 
+}
+
+
+/*Posición carrito y tamaño íconos nav*/
+.ms-3,
+.ms-auto {
+  margin-right: 100px; 
+}
+
+.nav-link {
+  font-size: 24px;
+}  
+
+.nav-link img {
+  height: 32px;
+  width: 32px;
+}
+
+nav.navbar {
+  height: 65px; 
+  border: 2px solid black;
+  background-color:#FFD600 !important;
+}
+
+.dropdown-menu {
+  background-color:#FFD600;
+  border: 2px solid black;
+}
+
+/*=============== CARRUSEL ===============*/
+
+.carrusel-principal{
+  background-color:#FFD600;
+  /* padding-bottom: 60px; */
+}
+
+.carrusel-principal img{
+  width: 100%;
+  height: 500px;
+  border: solid 2px black;
+}
+
+.carousel {
+  margin-top: 4rem;
+}
+
+/*============== TÍTULO ===============*/
+
+.titulo{
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  
+  padding: 0px;
+  background-color:#FFD600;
+}
+
+.titulo img {
+  padding: 0px;
+  padding-bottom: -200px;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 9px;
+  margin-right: 100px;
+  /* border: 2px solid sandybrown; */
+}
+
+#pokemon{
+  width: 180px;
+}
+
+/*=============== CARD ===============*/
+.contenedor {
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* border: 2px solid red; */
+  background-color:#FFD600;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+
+/*Contenedor productos*/
+.cartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding-block: 5rem;
+  /* border: 2px solid aqua; */
+  background-color: var(--body-color);
+  margin: 20px 20px 20px 20px;
+  border-radius: 100px;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+
+}
+
+/* #star {
+  height: 200px;
+  width: 200px;
+  margin: 0px 200px 0px 550px;
+  padding: 0px;
+  border: 2px solid greenyellow;
+  background-color: blueviolet;
+}
+
+.cartas img {
+  margin: 0px;
+  height: 200px;
+  width: 200px;
+} */
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 4rem;
+  overflow: hidden;
+  
+  /* border: 2px solid blue; */
+  /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
+}
+
+.card__article {
+  width: 300px;
+  border-radius: 4rem;
+  overflow: hidden;
+  height: 400px;
+  /* border: 2px solid lime; */
+  /* background-color: var(--first-color); */
+  background-color:#FFD600; /* Amarillo anaranjado */;
+  /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
+}
+
+
+.card__image {
+  position: relative;
+  background-color: var(--first-color-light);
+  padding-top: 1.5rem;
+  margin-bottom: -.9rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem 1rem 0rem 0rem; 
+  margin-left: 60px;
+  margin-top: 5px;
+}
+
+.card__data {
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  border-radius: 0px 0px 1rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  height: 140px;
+  width: 250px;
+  margin-top: 15px;
+  margin-left: 60px;
+  border-top: solid 10px #584d7c;
+  /* border: 2px solid fuchsia; */
+}
+
+
+.card__img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  margin-top: -25px;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: var(--first-color-alt);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+  display: none;
+}
+
+.card__name {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  margin-top: -1rem;
+  /* border: 2px solid black; */
+}
+
+.card__data h2{
+  color: blueviolet;
+  /* color: #584d7c; */
+  font-style: "Montserrat",Sans-serif;
+  /* border: 2px solid blue; */
+  margin-top: -8px;
+  font-size: 1.5rem ;
+}
+
+.card__description {
+  font-weight: 300;
+  margin-top: 0.1rem;
+}
+
+.card__button {
+  display: inline-block;
+  /* background-color: #584d7c; */
+  background-color: blueviolet;
+  padding: .25rem .5rem;
+  border-radius: 1.5rem;
+  color: var(--first-color);
+  font-weight: 600;
+  margin-top: -100px;
+}
+
+.card__button:hover {
+  background-color: wheat;
+  color: #584d7c;
+  border: 2px solid #584d7c;;
+}
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: var(--second-color);
+  display: none;
+}
+
+.swiper-button-prev {
+  margin-left: 15px;
+}
+
+.swiper-button-next {
+  margin-right: 15px;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
+}
+
+/*=============== PÁRRAFOS =============*/
+
+#yellow{
+  background-color: #FFD600;
+}
+
+.parrafo-1{
+  border: 2px solid #FFD600;
+  background-color: #FFD600;
+}
+
+/*=============== FOOTER ===============*/
+
+svg{
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  
+}
+
+/* Para los elementos <svg> directamente */
+svg.bi {
+  fill: red; /* o el color que prefieras */
+}
+
+/* Para los elementos <path> dentro de los símbolos */
+symbol path {
+  fill: lightgray; /* o el color que prefieras */
+}
+
+
+
+
+.simbolos-1{
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* footer{
+  background-color: blueviolet;
+  padding-bottom: 150px ;
+  border: 2px solid black;  
+} */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
+
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
+}
