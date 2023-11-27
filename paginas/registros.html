@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--1 ÍCONO-->
+    <link rel="icon" type="image/png" href="/archivos/imagenes/iconos/funko.png">
+    <link rel="stylesheet" href="/archivos/css/styles-registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Registros Funko Pop</title>
+</head>
+<body>
+       <!--3 NAVBAR-->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <div class="container-fluid">
+
+       <a class="navbar-brand" href="/index.html">
+          <img src="/archivos/imagenes/iconos/funko.png" alt="Logo" height="60">
+       </a>
+
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+
+
+
+       <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav mx-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="/index.html">Inicio</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                 Productos
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                 <li><a class="dropdown-item" href="#">Marvel</a></li>
+                 <li><a class="dropdown-item" href="#">Pokemon</a></li>
+                 <li><a class="dropdown-item" href="#">Disney</a></li>
+               </ul>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Contacto</a>
+             </li>
+           </ul>
+       </div>
+
+       
+       <!-- ÍCONOS -->
+
+       <div class="d-flex ms-3">
+         <a class="nav-link me-3" href="/paginas/registros.html">
+      
+           <img src="/archivos/imagenes/iconos/user.png" alt="Cuenta" height="30" >
+         </a>
+         <a class="nav-link ms-2" href="#">
+      
+           <img src="/archivos/imagenes/iconos/carrito.png" alt="Carrito" height="30">
+         </a>
+       </div>
+
+    </div>
+ </nav>
+ 
+
+<div class="contenedor-form">
+<form>
+    <h3>Registrate gratis</h3>
+  <div class="mb-3">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" aria-describedby="Nombre">
+          
+        </div>
+  <label for="exampleInputEmail1" class="form-label">Correo</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones.</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Registrarme</button>
+</form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
